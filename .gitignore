@@ -1,23 +1,20 @@
-# Python Virtual Environment
+# Python
 venv/
-
-# Python Cache
 __pycache__/
 *.pyc
 
-# IDE Files
+# GitHub Actions Runner
+actions-runner/
+
+# IDE
 .vscode/
 .idea/
 
-# Operating System Files
-.DS_Store
-Thumbs.db
-
-# Environment Variables
-.env
-
-# Python Build
-*.egg-info/
-
 # Logs
 *.log
+
+# OS
+.DS_Store
+
+# Python env
+.env
