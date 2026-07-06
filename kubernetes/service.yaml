@@ -1,21 +1,21 @@
 apiVersion: v1
-
 kind: Service
 
 metadata:
   name: stopwatch-service
+  namespace: default
+  labels:
+    app: stopwatch
 
 spec:
-
   selector:
     app: stopwatch
 
   type: NodePort
 
   ports:
-
-  - port: 5000
-
-    targetPort: 5000
-
-    nodePort: 30080
+    - name: http
+      protocol: TCP
+      port: 5000
+      targetPort: 5000
+      nodePort: 30080
